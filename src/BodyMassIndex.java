@@ -1,7 +1,7 @@
 public class BodyMassIndex {
-    public float calculate(float a, float b) {
-        float b1 = b*b;
-        float result = a / b1;
+    public float calculate(float bodyWeight, float height) {
+        float heightSquared = height * height;
+        float result = bodyWeight / heightSquared;
         return result;
     }
-    }
+}
